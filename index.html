@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Google Sheets</title>
+  </head>
+  <body>
+    <section class="stickAtTop" style="background-color: white">
+      <div id="form">
+        <select name="fonts" id="fonts">
+          <option value="1">aerial</option>
+          <option value="2">tide</option>
+          <option value="3">nirma</option>
+        </select>
+
+        <select name="size" id="size">
+          <option value="10">10</option>
+          <option value="12">12</option>
+          <option value="14">14</option>
+        </select>
+
+        <div>
+          <input type="checkbox" id="bold" />
+          <label for="bold" class="material-icons">format_bold</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="italics" />
+          <label for="italics" class="material-icons">format_italic</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="underline" id="underline" />
+          <label for="underline" class="material-icons">format_underline</label>
+        </div>
+ 
+       <div>
+          <div>
+            <input
+              type="radio"
+              name="align"
+              id="align-left"
+              value="align-left"
+              class="alignBtn"
+            />
+            <label for="align-left" class="material-icons"
+              >format_align_left</label
+            >
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              name="align"
+              id="align-center"
+              value="align-center"
+              class="alignBtn"
+            />
+            <label for="align-center" class="material-icons"
+              >format_align_center</label
+            >
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              name="align"
+              id="align-right"
+              value="align-right"
+              class="alignBtn"
+            />
+            <label for="align-right" class="material-icons"
+              >format_align_right</label
+            >
+          </div>
+        </div>
+
+        <div>
+          <input type="color" name="font-color" id="font-color" />
+          <label for="font-color" class="material-icons"
+            >format_color_text</label
+          >
+        </div>
+
+        <div>
+          <input type="color" name="bg-color" id="bg-color" />
+          <label for="bg-color" class="material-icons">format_color_fill</label>
+        </div>
+      </div>
+
+      <div id="formula_input">
+        <div id="Formula_selected_cell" style="padding: 1px">A1</div>
+
+        <input type="text" />
+      </div>
+    </section>
+
+    <section id="body_container">
+      <div id="alpha_header"></div>
+
+      <div id="cell_container">
+        <div id="row1"></div>
+
+        <div id="cells"></div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
